@@ -1,0 +1,498 @@
+{
+  "address": "0xb08B84Ce19Fb1C460A2212C157aF0c827150AacE",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "collectAllFees",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount0",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount1",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "decreaseLiquidityInHalf",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount0",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount1",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "deposits",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "internalType": "uint128",
+          "name": "liquidity",
+          "type": "uint128"
+        },
+        {
+          "internalType": "address",
+          "name": "token0",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "token1",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amountAdd0",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amountAdd1",
+          "type": "uint256"
+        }
+      ],
+      "name": "increaseLiquidityCurrentRange",
+      "outputs": [
+        {
+          "internalType": "uint128",
+          "name": "liquidity",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount0",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount1",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount0ToMint",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount1ToMint",
+          "type": "uint256"
+        }
+      ],
+      "name": "mintNewPosition",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint128",
+          "name": "liquidity",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount0",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount1",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "name": "onERC721Received",
+      "outputs": [
+        {
+          "internalType": "bytes4",
+          "name": "",
+          "type": "bytes4"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "poolFee",
+      "outputs": [
+        {
+          "internalType": "uint24",
+          "name": "",
+          "type": "uint24"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "retrieveNFT",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "nonfungiblePositionManagerAddress",
+          "type": "address"
+        }
+      ],
+      "name": "setNonfungiblePositionManager",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "tokenBAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint24",
+          "name": "fee",
+          "type": "uint24"
+        }
+      ],
+      "name": "setPoolVariables",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "tokenA",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "tokenB",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x93af57794be1da4eac358ca6a6b7235704c1ba321628715c8a39987e1a945f13",
+  "receipt": {
+    "to": null,
+    "from": "0x0344A0C345ed14AfB1f2Ff6aDc62e7fFa64338fb",
+    "contractAddress": "0xb08B84Ce19Fb1C460A2212C157aF0c827150AacE",
+    "transactionIndex": 0,
+    "gasUsed": "1251750",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xa60fa2592ee6971e104442b8c67ca8666fdb7348cd04405a944075064162a9ec",
+    "transactionHash": "0x93af57794be1da4eac358ca6a6b7235704c1ba321628715c8a39987e1a945f13",
+    "logs": [],
+    "blockNumber": 2141047,
+    "cumulativeGasUsed": "1251750",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 2,
+  "solcInputHash": "f3f5c16d05a6add6429753c824270a0f",
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"collectAllFees\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amount0\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount1\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"decreaseLiquidityInHalf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"amount0\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount1\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"deposits\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"uint128\",\"name\":\"liquidity\",\"type\":\"uint128\"},{\"internalType\":\"address\",\"name\":\"token0\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"token1\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountAdd0\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amountAdd1\",\"type\":\"uint256\"}],\"name\":\"increaseLiquidityCurrentRange\",\"outputs\":[{\"internalType\":\"uint128\",\"name\":\"liquidity\",\"type\":\"uint128\"},{\"internalType\":\"uint256\",\"name\":\"amount0\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount1\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount0ToMint\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount1ToMint\",\"type\":\"uint256\"}],\"name\":\"mintNewPosition\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"uint128\",\"name\":\"liquidity\",\"type\":\"uint128\"},{\"internalType\":\"uint256\",\"name\":\"amount0\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount1\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"name\":\"onERC721Received\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"\",\"type\":\"bytes4\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"poolFee\",\"outputs\":[{\"internalType\":\"uint24\",\"name\":\"\",\"type\":\"uint24\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"retrieveNFT\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"nonfungiblePositionManagerAddress\",\"type\":\"address\"}],\"name\":\"setNonfungiblePositionManager\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"tokenBAddress\",\"type\":\"address\"},{\"internalType\":\"uint24\",\"name\":\"fee\",\"type\":\"uint24\"}],\"name\":\"setPoolVariables\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"tokenA\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"tokenB\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"collectAllFees(uint256)\":{\"details\":\"The contract must hold the erc721 token before it can collect fees\",\"params\":{\"tokenId\":\"The id of the erc721 token\"},\"returns\":{\"amount0\":\"The amount of fees collected in token0\",\"amount1\":\"The amount of fees collected in token1\"}},\"decreaseLiquidityInHalf(uint256)\":{\"params\":{\"tokenId\":\"The id of the erc721 token\"},\"returns\":{\"amount0\":\"The amount received back in token0\",\"amount1\":\"The amount returned back in token1\"}},\"increaseLiquidityCurrentRange(uint256,uint256,uint256)\":{\"details\":\"Pool must be initialized already to add liquidity\",\"params\":{\"amount0\":\"The amount to add of token0\",\"amount1\":\"The amount to add of token1\",\"tokenId\":\"The id of the erc721 token\"}},\"mintNewPosition(uint256,uint256)\":{\"returns\":{\"amount0\":\"The amount of token0\",\"amount1\":\"The amount of token1\",\"liquidity\":\"The amount of liquidity for the position\",\"tokenId\":\"The id of the newly minted ERC721\"}},\"retrieveNFT(uint256)\":{\"params\":{\"tokenId\":\"The id of the erc721\"}}},\"stateVariables\":{\"deposits\":{\"details\":\"deposits[tokenId] => Deposit\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"collectAllFees(uint256)\":{\"notice\":\"Collects the fees associated with provided liquidity\"},\"decreaseLiquidityInHalf(uint256)\":{\"notice\":\"A function that decreases the current liquidity by half. An example to show how to call the `decreaseLiquidity` function defined in periphery.\"},\"increaseLiquidityCurrentRange(uint256,uint256,uint256)\":{\"notice\":\"Increases liquidity in the current range\"},\"mintNewPosition(uint256,uint256)\":{\"notice\":\"Calls the mint function defined in periphery, mints the same amount of each token. For this example we are providing 1000 tokenA and 1000 tokenB in liquidity\"},\"retrieveNFT(uint256)\":{\"notice\":\"Transfers the NFT to the owner\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/LiquidityExamples.sol\":\"LiquidityExamples\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/introspection/IERC165.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.7.0;\\n\\n/**\\n * @dev Interface of the ERC165 standard, as defined in the\\n * https://eips.ethereum.org/EIPS/eip-165[EIP].\\n *\\n * Implementers can declare support of contract interfaces, which can then be\\n * queried by others ({ERC165Checker}).\\n *\\n * For an implementation, see {ERC165}.\\n */\\ninterface IERC165 {\\n    /**\\n     * @dev Returns true if this contract implements the interface defined by\\n     * `interfaceId`. See the corresponding\\n     * https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section]\\n     * to learn more about how these ids are created.\\n     *\\n     * This function call must use less than 30 000 gas.\\n     */\\n    function supportsInterface(bytes4 interfaceId) external view returns (bool);\\n}\\n\",\"keccak256\":\"0xd2f30fad5b24c4120f96dbac83aacdb7993ee610a9092bc23c44463da292bf8d\",\"license\":\"MIT\"},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.7.0;\\n\\n/**\\n * @dev Interface of the ERC20 standard as defined in the EIP.\\n */\\ninterface IERC20 {\\n    /**\\n     * @dev Returns the amount of tokens in existence.\\n     */\\n    function totalSupply() external view returns (uint256);\\n\\n    /**\\n     * @dev Returns the amount of tokens owned by `account`.\\n     */\\n    function balanceOf(address account) external view returns (uint256);\\n\\n    /**\\n     * @dev Moves `amount` tokens from the caller's account to `recipient`.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transfer(address recipient, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Returns the remaining number of tokens that `spender` will be\\n     * allowed to spend on behalf of `owner` through {transferFrom}. This is\\n     * zero by default.\\n     *\\n     * This value changes when {approve} or {transferFrom} are called.\\n     */\\n    function allowance(address owner, address spender) external view returns (uint256);\\n\\n    /**\\n     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * IMPORTANT: Beware that changing an allowance with this method brings the risk\\n     * that someone may use both the old and the new allowance by unfortunate\\n     * transaction ordering. One possible solution to mitigate this race\\n     * condition is to first reduce the spender's allowance to 0 and set the\\n     * desired value afterwards:\\n     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729\\n     *\\n     * Emits an {Approval} event.\\n     */\\n    function approve(address spender, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Moves `amount` tokens from `sender` to `recipient` using the\\n     * allowance mechanism. `amount` is then deducted from the caller's\\n     * allowance.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Emitted when `value` tokens are moved from one account (`from`) to\\n     * another (`to`).\\n     *\\n     * Note that `value` may be zero.\\n     */\\n    event Transfer(address indexed from, address indexed to, uint256 value);\\n\\n    /**\\n     * @dev Emitted when the allowance of a `spender` for an `owner` is set by\\n     * a call to {approve}. `value` is the new allowance.\\n     */\\n    event Approval(address indexed owner, address indexed spender, uint256 value);\\n}\\n\",\"keccak256\":\"0xbd74f587ab9b9711801baf667db1426e4a03fd2d7f15af33e0e0d0394e7cef76\",\"license\":\"MIT\"},\"@openzeppelin/contracts/token/ERC721/IERC721.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.7.0;\\n\\nimport \\\"../../introspection/IERC165.sol\\\";\\n\\n/**\\n * @dev Required interface of an ERC721 compliant contract.\\n */\\ninterface IERC721 is IERC165 {\\n    /**\\n     * @dev Emitted when `tokenId` token is transferred from `from` to `to`.\\n     */\\n    event Transfer(address indexed from, address indexed to, uint256 indexed tokenId);\\n\\n    /**\\n     * @dev Emitted when `owner` enables `approved` to manage the `tokenId` token.\\n     */\\n    event Approval(address indexed owner, address indexed approved, uint256 indexed tokenId);\\n\\n    /**\\n     * @dev Emitted when `owner` enables or disables (`approved`) `operator` to manage all of its assets.\\n     */\\n    event ApprovalForAll(address indexed owner, address indexed operator, bool approved);\\n\\n    /**\\n     * @dev Returns the number of tokens in ``owner``'s account.\\n     */\\n    function balanceOf(address owner) external view returns (uint256 balance);\\n\\n    /**\\n     * @dev Returns the owner of the `tokenId` token.\\n     *\\n     * Requirements:\\n     *\\n     * - `tokenId` must exist.\\n     */\\n    function ownerOf(uint256 tokenId) external view returns (address owner);\\n\\n    /**\\n     * @dev Safely transfers `tokenId` token from `from` to `to`, checking first that contract recipients\\n     * are aware of the ERC721 protocol to prevent tokens from being forever locked.\\n     *\\n     * Requirements:\\n     *\\n     * - `from` cannot be the zero address.\\n     * - `to` cannot be the zero address.\\n     * - `tokenId` token must exist and be owned by `from`.\\n     * - If the caller is not `from`, it must be have been allowed to move this token by either {approve} or {setApprovalForAll}.\\n     * - If `to` refers to a smart contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function safeTransferFrom(address from, address to, uint256 tokenId) external;\\n\\n    /**\\n     * @dev Transfers `tokenId` token from `from` to `to`.\\n     *\\n     * WARNING: Usage of this method is discouraged, use {safeTransferFrom} whenever possible.\\n     *\\n     * Requirements:\\n     *\\n     * - `from` cannot be the zero address.\\n     * - `to` cannot be the zero address.\\n     * - `tokenId` token must be owned by `from`.\\n     * - If the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transferFrom(address from, address to, uint256 tokenId) external;\\n\\n    /**\\n     * @dev Gives permission to `to` to transfer `tokenId` token to another account.\\n     * The approval is cleared when the token is transferred.\\n     *\\n     * Only a single account can be approved at a time, so approving the zero address clears previous approvals.\\n     *\\n     * Requirements:\\n     *\\n     * - The caller must own the token or be an approved operator.\\n     * - `tokenId` must exist.\\n     *\\n     * Emits an {Approval} event.\\n     */\\n    function approve(address to, uint256 tokenId) external;\\n\\n    /**\\n     * @dev Returns the account approved for `tokenId` token.\\n     *\\n     * Requirements:\\n     *\\n     * - `tokenId` must exist.\\n     */\\n    function getApproved(uint256 tokenId) external view returns (address operator);\\n\\n    /**\\n     * @dev Approve or remove `operator` as an operator for the caller.\\n     * Operators can call {transferFrom} or {safeTransferFrom} for any token owned by the caller.\\n     *\\n     * Requirements:\\n     *\\n     * - The `operator` cannot be the caller.\\n     *\\n     * Emits an {ApprovalForAll} event.\\n     */\\n    function setApprovalForAll(address operator, bool _approved) external;\\n\\n    /**\\n     * @dev Returns if the `operator` is allowed to manage all of the assets of `owner`.\\n     *\\n     * See {setApprovalForAll}\\n     */\\n    function isApprovedForAll(address owner, address operator) external view returns (bool);\\n\\n    /**\\n      * @dev Safely transfers `tokenId` token from `from` to `to`.\\n      *\\n      * Requirements:\\n      *\\n      * - `from` cannot be the zero address.\\n      * - `to` cannot be the zero address.\\n      * - `tokenId` token must exist and be owned by `from`.\\n      * - If the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}.\\n      * - If `to` refers to a smart contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer.\\n      *\\n      * Emits a {Transfer} event.\\n      */\\n    function safeTransferFrom(address from, address to, uint256 tokenId, bytes calldata data) external;\\n}\\n\",\"keccak256\":\"0xb11597841d47f7a773bca63ca323c76f804cb5d944788de0327db5526319dc82\",\"license\":\"MIT\"},\"@openzeppelin/contracts/token/ERC721/IERC721Enumerable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.7.0;\\n\\nimport \\\"./IERC721.sol\\\";\\n\\n/**\\n * @title ERC-721 Non-Fungible Token Standard, optional enumeration extension\\n * @dev See https://eips.ethereum.org/EIPS/eip-721\\n */\\ninterface IERC721Enumerable is IERC721 {\\n\\n    /**\\n     * @dev Returns the total amount of tokens stored by the contract.\\n     */\\n    function totalSupply() external view returns (uint256);\\n\\n    /**\\n     * @dev Returns a token ID owned by `owner` at a given `index` of its token list.\\n     * Use along with {balanceOf} to enumerate all of ``owner``'s tokens.\\n     */\\n    function tokenOfOwnerByIndex(address owner, uint256 index) external view returns (uint256 tokenId);\\n\\n    /**\\n     * @dev Returns a token ID at a given `index` of all the tokens stored by the contract.\\n     * Use along with {totalSupply} to enumerate all tokens.\\n     */\\n    function tokenByIndex(uint256 index) external view returns (uint256);\\n}\\n\",\"keccak256\":\"0x2789dfea2d73182683d637db5729201f6730dae6113030a94c828f8688f38f2f\",\"license\":\"MIT\"},\"@openzeppelin/contracts/token/ERC721/IERC721Metadata.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.7.0;\\n\\nimport \\\"./IERC721.sol\\\";\\n\\n/**\\n * @title ERC-721 Non-Fungible Token Standard, optional metadata extension\\n * @dev See https://eips.ethereum.org/EIPS/eip-721\\n */\\ninterface IERC721Metadata is IERC721 {\\n\\n    /**\\n     * @dev Returns the token collection name.\\n     */\\n    function name() external view returns (string memory);\\n\\n    /**\\n     * @dev Returns the token collection symbol.\\n     */\\n    function symbol() external view returns (string memory);\\n\\n    /**\\n     * @dev Returns the Uniform Resource Identifier (URI) for `tokenId` token.\\n     */\\n    function tokenURI(uint256 tokenId) external view returns (string memory);\\n}\\n\",\"keccak256\":\"0xc82c7d1d732081d9bd23f1555ebdf8f3bc1738bc42c2bfc4b9aa7564d9fa3573\",\"license\":\"MIT\"},\"@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.7.0;\\n\\n/**\\n * @title ERC721 token receiver interface\\n * @dev Interface for any contract that wants to support safeTransfers\\n * from ERC721 asset contracts.\\n */\\ninterface IERC721Receiver {\\n    /**\\n     * @dev Whenever an {IERC721} `tokenId` token is transferred to this contract via {IERC721-safeTransferFrom}\\n     * by `operator` from `from`, this function is called.\\n     *\\n     * It must return its Solidity selector to confirm the token transfer.\\n     * If any other value is returned or the interface is not implemented by the recipient, the transfer will be reverted.\\n     *\\n     * The selector can be obtained in Solidity with `IERC721.onERC721Received.selector`.\\n     */\\n    function onERC721Received(address operator, address from, uint256 tokenId, bytes calldata data) external returns (bytes4);\\n}\\n\",\"keccak256\":\"0x05604ffcf69e416b8a42728bb0e4fd75170d8fac70bf1a284afeb4752a9bc52f\",\"license\":\"MIT\"},\"@uniswap/v3-core/contracts/libraries/TickMath.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0-or-later\\npragma solidity >=0.5.0 <0.8.0;\\n\\n/// @title Math library for computing sqrt prices from ticks and vice versa\\n/// @notice Computes sqrt price for ticks of size 1.0001, i.e. sqrt(1.0001^tick) as fixed point Q64.96 numbers. Supports\\n/// prices between 2**-128 and 2**128\\nlibrary TickMath {\\n    /// @dev The minimum tick that may be passed to #getSqrtRatioAtTick computed from log base 1.0001 of 2**-128\\n    int24 internal constant MIN_TICK = -887272;\\n    /// @dev The maximum tick that may be passed to #getSqrtRatioAtTick computed from log base 1.0001 of 2**128\\n    int24 internal constant MAX_TICK = -MIN_TICK;\\n\\n    /// @dev The minimum value that can be returned from #getSqrtRatioAtTick. Equivalent to getSqrtRatioAtTick(MIN_TICK)\\n    uint160 internal constant MIN_SQRT_RATIO = 4295128739;\\n    /// @dev The maximum value that can be returned from #getSqrtRatioAtTick. Equivalent to getSqrtRatioAtTick(MAX_TICK)\\n    uint160 internal constant MAX_SQRT_RATIO = 1461446703485210103287273052203988822378723970342;\\n\\n    /// @notice Calculates sqrt(1.0001^tick) * 2^96\\n    /// @dev Throws if |tick| > max tick\\n    /// @param tick The input tick for the above formula\\n    /// @return sqrtPriceX96 A Fixed point Q64.96 number representing the sqrt of the ratio of the two assets (token1/token0)\\n    /// at the given tick\\n    function getSqrtRatioAtTick(int24 tick) internal pure returns (uint160 sqrtPriceX96) {\\n        uint256 absTick = tick < 0 ? uint256(-int256(tick)) : uint256(int256(tick));\\n        require(absTick <= uint256(MAX_TICK), 'T');\\n\\n        uint256 ratio = absTick & 0x1 != 0 ? 0xfffcb933bd6fad37aa2d162d1a594001 : 0x100000000000000000000000000000000;\\n        if (absTick & 0x2 != 0) ratio = (ratio * 0xfff97272373d413259a46990580e213a) >> 128;\\n        if (absTick & 0x4 != 0) ratio = (ratio * 0xfff2e50f5f656932ef12357cf3c7fdcc) >> 128;\\n        if (absTick & 0x8 != 0) ratio = (ratio * 0xffe5caca7e10e4e61c3624eaa0941cd0) >> 128;\\n        if (absTick & 0x10 != 0) ratio = (ratio * 0xffcb9843d60f6159c9db58835c926644) >> 128;\\n        if (absTick & 0x20 != 0) ratio = (ratio * 0xff973b41fa98c081472e6896dfb254c0) >> 128;\\n        if (absTick & 0x40 != 0) ratio = (ratio * 0xff2ea16466c96a3843ec78b326b52861) >> 128;\\n        if (absTick & 0x80 != 0) ratio = (ratio * 0xfe5dee046a99a2a811c461f1969c3053) >> 128;\\n        if (absTick & 0x100 != 0) ratio = (ratio * 0xfcbe86c7900a88aedcffc83b479aa3a4) >> 128;\\n        if (absTick & 0x200 != 0) ratio = (ratio * 0xf987a7253ac413176f2b074cf7815e54) >> 128;\\n        if (absTick & 0x400 != 0) ratio = (ratio * 0xf3392b0822b70005940c7a398e4b70f3) >> 128;\\n        if (absTick & 0x800 != 0) ratio = (ratio * 0xe7159475a2c29b7443b29c7fa6e889d9) >> 128;\\n        if (absTick & 0x1000 != 0) ratio = (ratio * 0xd097f3bdfd2022b8845ad8f792aa5825) >> 128;\\n        if (absTick & 0x2000 != 0) ratio = (ratio * 0xa9f746462d870fdf8a65dc1f90e061e5) >> 128;\\n        if (absTick & 0x4000 != 0) ratio = (ratio * 0x70d869a156d2a1b890bb3df62baf32f7) >> 128;\\n        if (absTick & 0x8000 != 0) ratio = (ratio * 0x31be135f97d08fd981231505542fcfa6) >> 128;\\n        if (absTick & 0x10000 != 0) ratio = (ratio * 0x9aa508b5b7a84e1c677de54f3e99bc9) >> 128;\\n        if (absTick & 0x20000 != 0) ratio = (ratio * 0x5d6af8dedb81196699c329225ee604) >> 128;\\n        if (absTick & 0x40000 != 0) ratio = (ratio * 0x2216e584f5fa1ea926041bedfe98) >> 128;\\n        if (absTick & 0x80000 != 0) ratio = (ratio * 0x48a170391f7dc42444e8fa2) >> 128;\\n\\n        if (tick > 0) ratio = type(uint256).max / ratio;\\n\\n        // this divides by 1<<32 rounding up to go from a Q128.128 to a Q128.96.\\n        // we then downcast because we know the result always fits within 160 bits due to our tick input constraint\\n        // we round up in the division so getTickAtSqrtRatio of the output price is always consistent\\n        sqrtPriceX96 = uint160((ratio >> 32) + (ratio % (1 << 32) == 0 ? 0 : 1));\\n    }\\n\\n    /// @notice Calculates the greatest tick value such that getRatioAtTick(tick) <= ratio\\n    /// @dev Throws in case sqrtPriceX96 < MIN_SQRT_RATIO, as MIN_SQRT_RATIO is the lowest value getRatioAtTick may\\n    /// ever return.\\n    /// @param sqrtPriceX96 The sqrt ratio for which to compute the tick as a Q64.96\\n    /// @return tick The greatest tick for which the ratio is less than or equal to the input ratio\\n    function getTickAtSqrtRatio(uint160 sqrtPriceX96) internal pure returns (int24 tick) {\\n        // second inequality must be < because the price can never reach the price at the max tick\\n        require(sqrtPriceX96 >= MIN_SQRT_RATIO && sqrtPriceX96 < MAX_SQRT_RATIO, 'R');\\n        uint256 ratio = uint256(sqrtPriceX96) << 32;\\n\\n        uint256 r = ratio;\\n        uint256 msb = 0;\\n\\n        assembly {\\n            let f := shl(7, gt(r, 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF))\\n            msb := or(msb, f)\\n            r := shr(f, r)\\n        }\\n        assembly {\\n            let f := shl(6, gt(r, 0xFFFFFFFFFFFFFFFF))\\n            msb := or(msb, f)\\n            r := shr(f, r)\\n        }\\n        assembly {\\n            let f := shl(5, gt(r, 0xFFFFFFFF))\\n            msb := or(msb, f)\\n            r := shr(f, r)\\n        }\\n        assembly {\\n            let f := shl(4, gt(r, 0xFFFF))\\n            msb := or(msb, f)\\n            r := shr(f, r)\\n        }\\n        assembly {\\n            let f := shl(3, gt(r, 0xFF))\\n            msb := or(msb, f)\\n            r := shr(f, r)\\n        }\\n        assembly {\\n            let f := shl(2, gt(r, 0xF))\\n            msb := or(msb, f)\\n            r := shr(f, r)\\n        }\\n        assembly {\\n            let f := shl(1, gt(r, 0x3))\\n            msb := or(msb, f)\\n            r := shr(f, r)\\n        }\\n        assembly {\\n            let f := gt(r, 0x1)\\n            msb := or(msb, f)\\n        }\\n\\n        if (msb >= 128) r = ratio >> (msb - 127);\\n        else r = ratio << (127 - msb);\\n\\n        int256 log_2 = (int256(msb) - 128) << 64;\\n\\n        assembly {\\n            r := shr(127, mul(r, r))\\n            let f := shr(128, r)\\n            log_2 := or(log_2, shl(63, f))\\n            r := shr(f, r)\\n        }\\n        assembly {\\n            r := shr(127, mul(r, r))\\n            let f := shr(128, r)\\n            log_2 := or(log_2, shl(62, f))\\n            r := shr(f, r)\\n        }\\n        assembly {\\n            r := shr(127, mul(r, r))\\n            let f := shr(128, r)\\n            log_2 := or(log_2, shl(61, f))\\n            r := shr(f, r)\\n        }\\n        assembly {\\n            r := shr(127, mul(r, r))\\n            let f := shr(128, r)\\n            log_2 := or(log_2, shl(60, f))\\n            r := shr(f, r)\\n        }\\n        assembly {\\n            r := shr(127, mul(r, r))\\n            let f := shr(128, r)\\n            log_2 := or(log_2, shl(59, f))\\n            r := shr(f, r)\\n        }\\n        assembly {\\n            r := shr(127, mul(r, r))\\n            let f := shr(128, r)\\n            log_2 := or(log_2, shl(58, f))\\n            r := shr(f, r)\\n        }\\n        assembly {\\n            r := shr(127, mul(r, r))\\n            let f := shr(128, r)\\n            log_2 := or(log_2, shl(57, f))\\n            r := shr(f, r)\\n        }\\n        assembly {\\n            r := shr(127, mul(r, r))\\n            let f := shr(128, r)\\n            log_2 := or(log_2, shl(56, f))\\n            r := shr(f, r)\\n        }\\n        assembly {\\n            r := shr(127, mul(r, r))\\n            let f := shr(128, r)\\n            log_2 := or(log_2, shl(55, f))\\n            r := shr(f, r)\\n        }\\n        assembly {\\n            r := shr(127, mul(r, r))\\n            let f := shr(128, r)\\n            log_2 := or(log_2, shl(54, f))\\n            r := shr(f, r)\\n        }\\n        assembly {\\n            r := shr(127, mul(r, r))\\n            let f := shr(128, r)\\n            log_2 := or(log_2, shl(53, f))\\n            r := shr(f, r)\\n        }\\n        assembly {\\n            r := shr(127, mul(r, r))\\n            let f := shr(128, r)\\n            log_2 := or(log_2, shl(52, f))\\n            r := shr(f, r)\\n        }\\n        assembly {\\n            r := shr(127, mul(r, r))\\n            let f := shr(128, r)\\n            log_2 := or(log_2, shl(51, f))\\n            r := shr(f, r)\\n        }\\n        assembly {\\n            r := shr(127, mul(r, r))\\n            let f := shr(128, r)\\n            log_2 := or(log_2, shl(50, f))\\n        }\\n\\n        int256 log_sqrt10001 = log_2 * 255738958999603826347141; // 128.128 number\\n\\n        int24 tickLow = int24((log_sqrt10001 - 3402992956809132418596140100660247210) >> 128);\\n        int24 tickHi = int24((log_sqrt10001 + 291339464771989622907027621153398088495) >> 128);\\n\\n        tick = tickLow == tickHi ? tickLow : getSqrtRatioAtTick(tickHi) <= sqrtPriceX96 ? tickHi : tickLow;\\n    }\\n}\\n\",\"keccak256\":\"0xda8c2c0b12d2976acfd364453ba5f5bf0117ba3c91175ee9e1067d3fb26944d9\",\"license\":\"GPL-2.0-or-later\"},\"contracts/LiquidityExamples.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0-or-later\\npragma solidity =0.7.6;\\npragma abicoder v2;\\n\\nimport \\\"@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol\\\";\\nimport \\\"@uniswap/v3-core/contracts/libraries/TickMath.sol\\\";\\nimport \\\"./libraries/TransferHelper.sol\\\";\\nimport \\\"./interfaces/INonfungiblePositionManager.sol\\\";\\n\\ncontract LiquidityExamples is IERC721Receiver {\\n    INonfungiblePositionManager nonfungiblePositionManager;\\n    address public tokenA;\\n    address public tokenB;\\n    uint24 public poolFee;\\n\\n    /// @notice Represents the deposit of an NFT\\n    struct Deposit {\\n        address owner;\\n        uint128 liquidity;\\n        address token0;\\n        address token1;\\n    }\\n\\n    /// @dev deposits[tokenId] => Deposit\\n    mapping(uint256 => Deposit) public deposits;\\n\\n    function setNonfungiblePositionManager(\\n        address nonfungiblePositionManagerAddress\\n    ) public {\\n        nonfungiblePositionManager = INonfungiblePositionManager(\\n            nonfungiblePositionManagerAddress\\n        );\\n    }\\n\\n    function setPoolVariables(\\n        address tokenAAddress,\\n        address tokenBAddress,\\n        uint24 fee\\n    ) public {\\n        tokenA = tokenAAddress;\\n        tokenB = tokenBAddress;\\n        poolFee = fee;\\n    }\\n\\n    // Implementing `onERC721Received` so this contract can receive custody of erc721 tokens\\n    // Note that the operator is recorded as the owner of the deposited NFT\\n    function onERC721Received(\\n        address operator,\\n        address,\\n        uint256 tokenId,\\n        bytes calldata\\n    ) external override returns (bytes4) {\\n        require(\\n            msg.sender == address(nonfungiblePositionManager),\\n            \\\"not a univ3 nft\\\"\\n        );\\n        _createDeposit(operator, tokenId);\\n        return this.onERC721Received.selector;\\n    }\\n\\n    function _createDeposit(address owner, uint256 tokenId) internal {\\n        (\\n            ,\\n            ,\\n            address token0,\\n            address token1,\\n            ,\\n            ,\\n            ,\\n            uint128 liquidity,\\n            ,\\n            ,\\n            ,\\n\\n        ) = nonfungiblePositionManager.positions(tokenId);\\n        // set the owner and data for position\\n        deposits[tokenId] = Deposit({\\n            owner: owner,\\n            liquidity: liquidity,\\n            token0: token0,\\n            token1: token1\\n        });\\n    }\\n\\n    /// @notice Calls the mint function defined in periphery, mints the same amount of each token.\\n    /// For this example we are providing 1000 tokenA and 1000 tokenB in liquidity\\n    /// @return tokenId The id of the newly minted ERC721\\n    /// @return liquidity The amount of liquidity for the position\\n    /// @return amount0 The amount of token0\\n    /// @return amount1 The amount of token1\\n    function mintNewPosition(uint256 amount0ToMint, uint256 amount1ToMint)\\n        external\\n        returns (\\n            uint256 tokenId,\\n            uint128 liquidity,\\n            uint256 amount0,\\n            uint256 amount1\\n        )\\n    {\\n        // transfer tokens to contract\\n        TransferHelper.safeTransferFrom(\\n            tokenA,\\n            msg.sender,\\n            address(this),\\n            amount0ToMint\\n        );\\n        TransferHelper.safeTransferFrom(\\n            tokenB,\\n            msg.sender,\\n            address(this),\\n            amount1ToMint\\n        );\\n\\n        // Approve the position manager\\n        TransferHelper.safeApprove(\\n            tokenA,\\n            address(nonfungiblePositionManager),\\n            amount0ToMint\\n        );\\n        TransferHelper.safeApprove(\\n            tokenB,\\n            address(nonfungiblePositionManager),\\n            amount1ToMint\\n        );\\n\\n        // The values for tickLower and tickUpper may not work for all tick spacings.\\n        // Setting amount0Min and amount1Min to 0 is unsafe.\\n        INonfungiblePositionManager.MintParams\\n            memory params = INonfungiblePositionManager.MintParams({\\n                token0: tokenA,\\n                token1: tokenB,\\n                fee: poolFee,\\n                tickLower: TickMath.MIN_TICK,\\n                tickUpper: TickMath.MAX_TICK,\\n                amount0Desired: amount0ToMint,\\n                amount1Desired: amount1ToMint,\\n                amount0Min: 0,\\n                amount1Min: 0,\\n                recipient: address(this),\\n                deadline: block.timestamp\\n            });\\n\\n        // Note that the pool defined by tokenA/tokenB and fee tier 0.3% must already be created and initialized in order to mint\\n        (tokenId, liquidity, amount0, amount1) = nonfungiblePositionManager\\n            .mint(params);\\n\\n        // Create a deposit\\n        _createDeposit(msg.sender, tokenId);\\n\\n        // Remove allowance and refund in both assets.\\n        if (amount0 < amount0ToMint) {\\n            TransferHelper.safeApprove(\\n                tokenA,\\n                address(nonfungiblePositionManager),\\n                0\\n            );\\n            uint256 refund0 = amount0ToMint - amount0;\\n            TransferHelper.safeTransfer(tokenA, msg.sender, refund0);\\n        }\\n\\n        if (amount1 < amount1ToMint) {\\n            TransferHelper.safeApprove(\\n                tokenB,\\n                address(nonfungiblePositionManager),\\n                0\\n            );\\n            uint256 refund1 = amount1ToMint - amount1;\\n            TransferHelper.safeTransfer(tokenB, msg.sender, refund1);\\n        }\\n    }\\n\\n    /// @notice Collects the fees associated with provided liquidity\\n    /// @dev The contract must hold the erc721 token before it can collect fees\\n    /// @param tokenId The id of the erc721 token\\n    /// @return amount0 The amount of fees collected in token0\\n    /// @return amount1 The amount of fees collected in token1\\n    function collectAllFees(uint256 tokenId)\\n        external\\n        returns (uint256 amount0, uint256 amount1)\\n    {\\n        // Caller must own the ERC721 position, meaning it must be a deposit\\n        // set amount0Max and amount1Max to type(uint128).max to collect all fees\\n        // alternatively can set recipient to msg.sender and avoid another transaction in `sendToOwner`\\n        INonfungiblePositionManager.CollectParams\\n            memory params = INonfungiblePositionManager.CollectParams({\\n                tokenId: tokenId,\\n                recipient: address(this),\\n                amount0Max: type(uint128).max,\\n                amount1Max: type(uint128).max\\n            });\\n\\n        (amount0, amount1) = nonfungiblePositionManager.collect(params);\\n\\n        // send collected fees back to owner\\n        _sendToOwner(tokenId, amount0, amount1);\\n    }\\n\\n    /// @notice A function that decreases the current liquidity by half. An example to show how to call the `decreaseLiquidity` function defined in periphery.\\n    /// @param tokenId The id of the erc721 token\\n    /// @return amount0 The amount received back in token0\\n    /// @return amount1 The amount returned back in token1\\n    function decreaseLiquidityInHalf(uint256 tokenId)\\n        external\\n        returns (uint256 amount0, uint256 amount1)\\n    {\\n        // caller must be the owner of the NFT\\n        require(msg.sender == deposits[tokenId].owner, \\\"Not the owner\\\");\\n        // get liquidity data for tokenId\\n        uint128 liquidity = deposits[tokenId].liquidity;\\n        uint128 halfLiquidity = liquidity / 2;\\n\\n        // amount0Min and amount1Min are price slippage checks\\n        // if the amount received after burning is not greater than these minimums, transaction will fail\\n        INonfungiblePositionManager.DecreaseLiquidityParams\\n            memory params = INonfungiblePositionManager\\n                .DecreaseLiquidityParams({\\n                    tokenId: tokenId,\\n                    liquidity: halfLiquidity,\\n                    amount0Min: 0,\\n                    amount1Min: 0,\\n                    deadline: block.timestamp\\n                });\\n\\n        (amount0, amount1) = nonfungiblePositionManager.decreaseLiquidity(\\n            params\\n        );\\n\\n        // send liquidity back to owner\\n        _sendToOwner(tokenId, amount0, amount1);\\n    }\\n\\n    /// @notice Increases liquidity in the current range\\n    /// @dev Pool must be initialized already to add liquidity\\n    /// @param tokenId The id of the erc721 token\\n    /// @param amount0 The amount to add of token0\\n    /// @param amount1 The amount to add of token1\\n    function increaseLiquidityCurrentRange(\\n        uint256 tokenId,\\n        uint256 amountAdd0,\\n        uint256 amountAdd1\\n    )\\n        external\\n        returns (\\n            uint128 liquidity,\\n            uint256 amount0,\\n            uint256 amount1\\n        )\\n    {\\n        address token0 = deposits[tokenId].token0;\\n        address token1 = deposits[tokenId].token1;\\n        TransferHelper.safeTransferFrom(\\n            token0,\\n            msg.sender,\\n            address(this),\\n            amountAdd0\\n        );\\n        TransferHelper.safeTransferFrom(\\n            token1,\\n            msg.sender,\\n            address(this),\\n            amountAdd1\\n        );\\n\\n        TransferHelper.safeApprove(\\n            token0,\\n            address(nonfungiblePositionManager),\\n            amountAdd0\\n        );\\n        TransferHelper.safeApprove(\\n            token1,\\n            address(nonfungiblePositionManager),\\n            amountAdd1\\n        );\\n\\n        INonfungiblePositionManager.IncreaseLiquidityParams\\n            memory params = INonfungiblePositionManager\\n                .IncreaseLiquidityParams({\\n                    tokenId: tokenId,\\n                    amount0Desired: amountAdd0,\\n                    amount1Desired: amountAdd1,\\n                    amount0Min: 0,\\n                    amount1Min: 0,\\n                    deadline: block.timestamp\\n                });\\n\\n        (liquidity, amount0, amount1) = nonfungiblePositionManager\\n            .increaseLiquidity(params);\\n\\n        // Remove allowance and refund in both assets.\\n        if (amount0 < amountAdd0) {\\n            TransferHelper.safeApprove(\\n                token0,\\n                address(nonfungiblePositionManager),\\n                0\\n            );\\n            uint256 refund0 = amountAdd0 - amount0;\\n            TransferHelper.safeTransfer(token0, msg.sender, refund0);\\n        }\\n\\n        if (amount1 < amountAdd1) {\\n            TransferHelper.safeApprove(\\n                token1,\\n                address(nonfungiblePositionManager),\\n                0\\n            );\\n            uint256 refund1 = amountAdd1 - amount1;\\n            TransferHelper.safeTransfer(token1, msg.sender, refund1);\\n        }\\n    }\\n\\n    /// @notice Transfers funds to owner of NFT\\n    /// @param tokenId The id of the erc721\\n    /// @param amount0 The amount of token0\\n    /// @param amount1 The amount of token1\\n    function _sendToOwner(\\n        uint256 tokenId,\\n        uint256 amount0,\\n        uint256 amount1\\n    ) private {\\n        // get owner of contract\\n        address owner = deposits[tokenId].owner;\\n\\n        address token0 = deposits[tokenId].token0;\\n        address token1 = deposits[tokenId].token1;\\n        // send collected fees to owner\\n        TransferHelper.safeTransfer(token0, owner, amount0);\\n        TransferHelper.safeTransfer(token1, owner, amount1);\\n    }\\n\\n    /// @notice Transfers the NFT to the owner\\n    /// @param tokenId The id of the erc721\\n    function retrieveNFT(uint256 tokenId) external {\\n        // must be the owner of the NFT\\n        require(msg.sender == deposits[tokenId].owner, \\\"Not the owner\\\");\\n        // remove information related to tokenId\\n        delete deposits[tokenId];\\n        // transfer ownership to original owner\\n        nonfungiblePositionManager.safeTransferFrom(\\n            address(this),\\n            msg.sender,\\n            tokenId\\n        );\\n    }\\n}\\n\",\"keccak256\":\"0xbdf1d71969bbab653a5bf2c7dd5c31471323470dffc4e37d94a6719a2336ca4f\",\"license\":\"GPL-2.0-or-later\"},\"contracts/interfaces/IERC721Permit.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0-or-later\\npragma solidity >=0.7.5;\\n\\nimport '@openzeppelin/contracts/token/ERC721/IERC721.sol';\\n\\n/// @title ERC721 with permit\\n/// @notice Extension to ERC721 that includes a permit function for signature based approvals\\ninterface IERC721Permit is IERC721 {\\n    /// @notice The permit typehash used in the permit signature\\n    /// @return The typehash for the permit\\n    function PERMIT_TYPEHASH() external pure returns (bytes32);\\n\\n    /// @notice The domain separator used in the permit signature\\n    /// @return The domain seperator used in encoding of permit signature\\n    function DOMAIN_SEPARATOR() external view returns (bytes32);\\n\\n    /// @notice Approve of a specific token ID for spending by spender via signature\\n    /// @param spender The account that is being approved\\n    /// @param tokenId The ID of the token that is being approved for spending\\n    /// @param deadline The deadline timestamp by which the call must be mined for the approve to work\\n    /// @param v Must produce valid secp256k1 signature from the holder along with `r` and `s`\\n    /// @param r Must produce valid secp256k1 signature from the holder along with `v` and `s`\\n    /// @param s Must produce valid secp256k1 signature from the holder along with `r` and `v`\\n    function permit(\\n        address spender,\\n        uint256 tokenId,\\n        uint256 deadline,\\n        uint8 v,\\n        bytes32 r,\\n        bytes32 s\\n    ) external payable;\\n}\\n\",\"keccak256\":\"0x9e3c2a4ee65ddf95b2dfcb0815784eea3a295707e6f8b83e4c4f0f8fe2e3a1d4\",\"license\":\"GPL-2.0-or-later\"},\"contracts/interfaces/INonfungiblePositionManager.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0-or-later\\npragma solidity >=0.7.5;\\npragma abicoder v2;\\n\\nimport \\\"@openzeppelin/contracts/token/ERC721/IERC721Metadata.sol\\\";\\nimport \\\"@openzeppelin/contracts/token/ERC721/IERC721Enumerable.sol\\\";\\n\\nimport \\\"./IPoolInitializer.sol\\\";\\nimport \\\"./IERC721Permit.sol\\\";\\nimport \\\"./IPeripheryPayments.sol\\\";\\nimport \\\"./IPeripheryImmutableState.sol\\\";\\nimport \\\"../libraries/PoolAddress.sol\\\";\\n\\n/// @title Non-fungible token for positions\\n/// @notice Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred\\n/// and authorized.\\ninterface INonfungiblePositionManager is\\n    IPoolInitializer,\\n    IPeripheryPayments,\\n    IPeripheryImmutableState,\\n    IERC721Metadata,\\n    IERC721Enumerable,\\n    IERC721Permit\\n{\\n    /// @notice Emitted when liquidity is increased for a position NFT\\n    /// @dev Also emitted when a token is minted\\n    /// @param tokenId The ID of the token for which liquidity was increased\\n    /// @param liquidity The amount by which liquidity for the NFT position was increased\\n    /// @param amount0 The amount of token0 that was paid for the increase in liquidity\\n    /// @param amount1 The amount of token1 that was paid for the increase in liquidity\\n    event IncreaseLiquidity(\\n        uint256 indexed tokenId,\\n        uint128 liquidity,\\n        uint256 amount0,\\n        uint256 amount1\\n    );\\n    /// @notice Emitted when liquidity is decreased for a position NFT\\n    /// @param tokenId The ID of the token for which liquidity was decreased\\n    /// @param liquidity The amount by which liquidity for the NFT position was decreased\\n    /// @param amount0 The amount of token0 that was accounted for the decrease in liquidity\\n    /// @param amount1 The amount of token1 that was accounted for the decrease in liquidity\\n    event DecreaseLiquidity(\\n        uint256 indexed tokenId,\\n        uint128 liquidity,\\n        uint256 amount0,\\n        uint256 amount1\\n    );\\n    /// @notice Emitted when tokens are collected for a position NFT\\n    /// @dev The amounts reported may not be exactly equivalent to the amounts transferred, due to rounding behavior\\n    /// @param tokenId The ID of the token for which underlying tokens were collected\\n    /// @param recipient The address of the account that received the collected tokens\\n    /// @param amount0 The amount of token0 owed to the position that was collected\\n    /// @param amount1 The amount of token1 owed to the position that was collected\\n    event Collect(\\n        uint256 indexed tokenId,\\n        address recipient,\\n        uint256 amount0,\\n        uint256 amount1\\n    );\\n\\n    /// @notice Returns the position information associated with a given token ID.\\n    /// @dev Throws if the token ID is not valid.\\n    /// @param tokenId The ID of the token that represents the position\\n    /// @return nonce The nonce for permits\\n    /// @return operator The address that is approved for spending\\n    /// @return token0 The address of the token0 for a specific pool\\n    /// @return token1 The address of the token1 for a specific pool\\n    /// @return fee The fee associated with the pool\\n    /// @return tickLower The lower end of the tick range for the position\\n    /// @return tickUpper The higher end of the tick range for the position\\n    /// @return liquidity The liquidity of the position\\n    /// @return feeGrowthInside0LastX128 The fee growth of token0 as of the last action on the individual position\\n    /// @return feeGrowthInside1LastX128 The fee growth of token1 as of the last action on the individual position\\n    /// @return tokensOwed0 The uncollected amount of token0 owed to the position as of the last computation\\n    /// @return tokensOwed1 The uncollected amount of token1 owed to the position as of the last computation\\n    function positions(uint256 tokenId)\\n        external\\n        view\\n        returns (\\n            uint96 nonce,\\n            address operator,\\n            address token0,\\n            address token1,\\n            uint24 fee,\\n            int24 tickLower,\\n            int24 tickUpper,\\n            uint128 liquidity,\\n            uint256 feeGrowthInside0LastX128,\\n            uint256 feeGrowthInside1LastX128,\\n            uint128 tokensOwed0,\\n            uint128 tokensOwed1\\n        );\\n\\n    struct MintParams {\\n        address token0;\\n        address token1;\\n        uint24 fee;\\n        int24 tickLower;\\n        int24 tickUpper;\\n        uint256 amount0Desired;\\n        uint256 amount1Desired;\\n        uint256 amount0Min;\\n        uint256 amount1Min;\\n        address recipient;\\n        uint256 deadline;\\n    }\\n\\n    /// @notice Creates a new position wrapped in a NFT\\n    /// @dev Call this when the pool does exist and is initialized. Note that if the pool is created but not initialized\\n    /// a method does not exist, i.e. the pool is assumed to be initialized.\\n    /// @param params The params necessary to mint a position, encoded as `MintParams` in calldata\\n    /// @return tokenId The ID of the token that represents the minted position\\n    /// @return liquidity The amount of liquidity for this position\\n    /// @return amount0 The amount of token0\\n    /// @return amount1 The amount of token1\\n    function mint(MintParams calldata params)\\n        external\\n        payable\\n        returns (\\n            uint256 tokenId,\\n            uint128 liquidity,\\n            uint256 amount0,\\n            uint256 amount1\\n        );\\n\\n    struct IncreaseLiquidityParams {\\n        uint256 tokenId;\\n        uint256 amount0Desired;\\n        uint256 amount1Desired;\\n        uint256 amount0Min;\\n        uint256 amount1Min;\\n        uint256 deadline;\\n    }\\n\\n    /// @notice Increases the amount of liquidity in a position, with tokens paid by the `msg.sender`\\n    /// @param params tokenId The ID of the token for which liquidity is being increased,\\n    /// amount0Desired The desired amount of token0 to be spent,\\n    /// amount1Desired The desired amount of token1 to be spent,\\n    /// amount0Min The minimum amount of token0 to spend, which serves as a slippage check,\\n    /// amount1Min The minimum amount of token1 to spend, which serves as a slippage check,\\n    /// deadline The time by which the transaction must be included to effect the change\\n    /// @return liquidity The new liquidity amount as a result of the increase\\n    /// @return amount0 The amount of token0 to acheive resulting liquidity\\n    /// @return amount1 The amount of token1 to acheive resulting liquidity\\n    function increaseLiquidity(IncreaseLiquidityParams calldata params)\\n        external\\n        payable\\n        returns (\\n            uint128 liquidity,\\n            uint256 amount0,\\n            uint256 amount1\\n        );\\n\\n    struct DecreaseLiquidityParams {\\n        uint256 tokenId;\\n        uint128 liquidity;\\n        uint256 amount0Min;\\n        uint256 amount1Min;\\n        uint256 deadline;\\n    }\\n\\n    /// @notice Decreases the amount of liquidity in a position and accounts it to the position\\n    /// @param params tokenId The ID of the token for which liquidity is being decreased,\\n    /// amount The amount by which liquidity will be decreased,\\n    /// amount0Min The minimum amount of token0 that should be accounted for the burned liquidity,\\n    /// amount1Min The minimum amount of token1 that should be accounted for the burned liquidity,\\n    /// deadline The time by which the transaction must be included to effect the change\\n    /// @return amount0 The amount of token0 accounted to the position's tokens owed\\n    /// @return amount1 The amount of token1 accounted to the position's tokens owed\\n    function decreaseLiquidity(DecreaseLiquidityParams calldata params)\\n        external\\n        payable\\n        returns (uint256 amount0, uint256 amount1);\\n\\n    struct CollectParams {\\n        uint256 tokenId;\\n        address recipient;\\n        uint128 amount0Max;\\n        uint128 amount1Max;\\n    }\\n\\n    /// @notice Collects up to a maximum amount of fees owed to a specific position to the recipient\\n    /// @param params tokenId The ID of the NFT for which tokens are being collected,\\n    /// recipient The account that should receive the tokens,\\n    /// amount0Max The maximum amount of token0 to collect,\\n    /// amount1Max The maximum amount of token1 to collect\\n    /// @return amount0 The amount of fees collected in token0\\n    /// @return amount1 The amount of fees collected in token1\\n    function collect(CollectParams calldata params)\\n        external\\n        payable\\n        returns (uint256 amount0, uint256 amount1);\\n\\n    /// @notice Burns a token ID, which deletes it from the NFT contract. The token must have 0 liquidity and all tokens\\n    /// must be collected first.\\n    /// @param tokenId The ID of the token that is being burned\\n    function burn(uint256 tokenId) external payable;\\n}\\n\",\"keccak256\":\"0xd16bf1f38c37be45dbf5280990e5cc3f45f46d36a0377524e53038e162483d41\",\"license\":\"GPL-2.0-or-later\"},\"contracts/interfaces/IPeripheryImmutableState.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0-or-later\\npragma solidity >=0.5.0;\\n\\n/// @title Immutable state\\n/// @notice Functions that return immutable state of the router\\ninterface IPeripheryImmutableState {\\n    /// @return Returns the address of the Uniswap V3 factory\\n    function factory() external view returns (address);\\n\\n    /// @return Returns the address of WETH9\\n    function WETH9() external view returns (address);\\n}\\n\",\"keccak256\":\"0x7affcfeb5127c0925a71d6a65345e117c33537523aeca7bc98085ead8452519d\",\"license\":\"GPL-2.0-or-later\"},\"contracts/interfaces/IPeripheryPayments.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0-or-later\\npragma solidity >=0.7.5;\\n\\n/// @title Periphery Payments\\n/// @notice Functions to ease deposits and withdrawals of ETH\\ninterface IPeripheryPayments {\\n    /// @notice Unwraps the contract's WETH9 balance and sends it to recipient as ETH.\\n    /// @dev The amountMinimum parameter prevents malicious contracts from stealing WETH9 from users.\\n    /// @param amountMinimum The minimum amount of WETH9 to unwrap\\n    /// @param recipient The address receiving ETH\\n    function unwrapWETH9(uint256 amountMinimum, address recipient) external payable;\\n\\n    /// @notice Refunds any ETH balance held by this contract to the `msg.sender`\\n    /// @dev Useful for bundling with mint or increase liquidity that uses ether, or exact output swaps\\n    /// that use ether for the input amount\\n    function refundETH() external payable;\\n\\n    /// @notice Transfers the full amount of a token held by this contract to recipient\\n    /// @dev The amountMinimum parameter prevents malicious contracts from stealing the token from users\\n    /// @param token The contract address of the token which will be transferred to `recipient`\\n    /// @param amountMinimum The minimum amount of token required for a transfer\\n    /// @param recipient The destination address of the token\\n    function sweepToken(\\n        address token,\\n        uint256 amountMinimum,\\n        address recipient\\n    ) external payable;\\n}\\n\",\"keccak256\":\"0xb547e10f1e69bed03621a62b73a503e260643066c6b4054867a4d1fef47eb274\",\"license\":\"GPL-2.0-or-later\"},\"contracts/interfaces/IPoolInitializer.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0-or-later\\npragma solidity >=0.7.5;\\npragma abicoder v2;\\n\\n/// @title Creates and initializes V3 Pools\\n/// @notice Provides a method for creating and initializing a pool, if necessary, for bundling with other methods that\\n/// require the pool to exist.\\ninterface IPoolInitializer {\\n    /// @notice Creates a new pool if it does not exist, then initializes if not initialized\\n    /// @dev This method can be bundled with others via IMulticall for the first action (e.g. mint) performed against a pool\\n    /// @param token0 The contract address of token0 of the pool\\n    /// @param token1 The contract address of token1 of the pool\\n    /// @param fee The fee amount of the v3 pool for the specified token pair\\n    /// @param sqrtPriceX96 The initial square root price of the pool as a Q64.96 value\\n    /// @return pool Returns the pool address based on the pair of tokens and fee, will return the newly created pool address if necessary\\n    function createAndInitializePoolIfNecessary(\\n        address token0,\\n        address token1,\\n        uint24 fee,\\n        uint160 sqrtPriceX96\\n    ) external payable returns (address pool);\\n}\\n\",\"keccak256\":\"0x9d7695e8d94c22cc5fcced602017aabb988de89981ea7bee29ea629d5328a862\",\"license\":\"GPL-2.0-or-later\"},\"contracts/libraries/PoolAddress.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0-or-later\\npragma solidity >=0.5.0;\\n\\n/// @title Provides functions for deriving a pool address from the factory, tokens, and the fee\\nlibrary PoolAddress {\\n    bytes32 internal constant POOL_INIT_CODE_HASH =\\n        0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54;\\n\\n    /// @notice The identifying key of the pool\\n    struct PoolKey {\\n        address token0;\\n        address token1;\\n        uint24 fee;\\n    }\\n\\n    /// @notice Returns PoolKey: the ordered tokens with the matched fee levels\\n    /// @param tokenA The first token of a pool, unsorted\\n    /// @param tokenB The second token of a pool, unsorted\\n    /// @param fee The fee level of the pool\\n    /// @return Poolkey The pool details with ordered token0 and token1 assignments\\n    function getPoolKey(\\n        address tokenA,\\n        address tokenB,\\n        uint24 fee\\n    ) internal pure returns (PoolKey memory) {\\n        if (tokenA > tokenB) (tokenA, tokenB) = (tokenB, tokenA);\\n        return PoolKey({token0: tokenA, token1: tokenB, fee: fee});\\n    }\\n\\n    /// @notice Deterministically computes the pool address given the factory and PoolKey\\n    /// @param factory The Uniswap V3 factory contract address\\n    /// @param key The PoolKey\\n    /// @return pool The contract address of the V3 pool\\n    function computeAddress(address factory, PoolKey memory key)\\n        internal\\n        pure\\n        returns (address pool)\\n    {\\n        require(key.token0 < key.token1);\\n        pool = address(\\n            uint256(\\n                keccak256(\\n                    abi.encodePacked(\\n                        hex\\\"ff\\\",\\n                        factory,\\n                        keccak256(abi.encode(key.token0, key.token1, key.fee)),\\n                        POOL_INIT_CODE_HASH\\n                    )\\n                )\\n            )\\n        );\\n    }\\n}\\n\",\"keccak256\":\"0x2df28f794af1ab9822e20ae30cb9ab386ef279e487a1657b7a6d97171ce96800\",\"license\":\"GPL-2.0-or-later\"},\"contracts/libraries/TransferHelper.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0-or-later\\npragma solidity >=0.6.0;\\n\\nimport \\\"@openzeppelin/contracts/token/ERC20/IERC20.sol\\\";\\n\\nlibrary TransferHelper {\\n    /// @notice Transfers tokens from the targeted address to the given destination\\n    /// @notice Errors with 'STF' if transfer fails\\n    /// @param token The contract address of the token to be transferred\\n    /// @param from The originating address from which the tokens will be transferred\\n    /// @param to The destination address of the transfer\\n    /// @param value The amount to be transferred\\n    function safeTransferFrom(\\n        address token,\\n        address from,\\n        address to,\\n        uint256 value\\n    ) internal {\\n        (bool success, bytes memory data) = token.call(\\n            abi.encodeWithSelector(\\n                IERC20.transferFrom.selector,\\n                from,\\n                to,\\n                value\\n            )\\n        );\\n        require(\\n            success && (data.length == 0 || abi.decode(data, (bool))),\\n            \\\"STF\\\"\\n        );\\n    }\\n\\n    /// @notice Transfers tokens from msg.sender to a recipient\\n    /// @dev Errors with ST if transfer fails\\n    /// @param token The contract address of the token which will be transferred\\n    /// @param to The recipient of the transfer\\n    /// @param value The value of the transfer\\n    function safeTransfer(\\n        address token,\\n        address to,\\n        uint256 value\\n    ) internal {\\n        (bool success, bytes memory data) = token.call(\\n            abi.encodeWithSelector(IERC20.transfer.selector, to, value)\\n        );\\n        require(\\n            success && (data.length == 0 || abi.decode(data, (bool))),\\n            \\\"ST\\\"\\n        );\\n    }\\n\\n    /// @notice Approves the stipulated contract to spend the given allowance in the given token\\n    /// @dev Errors with 'SA' if transfer fails\\n    /// @param token The contract address of the token to be approved\\n    /// @param to The target of the approval\\n    /// @param value The amount of the given token the target will be allowed to spend\\n    function safeApprove(\\n        address token,\\n        address to,\\n        uint256 value\\n    ) internal {\\n        (bool success, bytes memory data) = token.call(\\n            abi.encodeWithSelector(IERC20.approve.selector, to, value)\\n        );\\n        require(\\n            success && (data.length == 0 || abi.decode(data, (bool))),\\n            \\\"SA\\\"\\n        );\\n    }\\n\\n    /// @notice Transfers ETH to the recipient address\\n    /// @dev Fails with `STE`\\n    /// @param to The destination of the transfer\\n    /// @param value The value to be transferred\\n    function safeTransferETH(address to, uint256 value) internal {\\n        (bool success, ) = to.call{value: value}(new bytes(0));\\n        require(success, \\\"STE\\\");\\n    }\\n}\\n\",\"keccak256\":\"0xc379f687eca663c026ae19fe139f49333f3043ca932f48b5ae7383864a84dbce\",\"license\":\"GPL-2.0-or-later\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506115ae806100206000396000f3fe608060405234801561001057600080fd5b50600436106100b45760003560e01c8063617d6d6e11610071578063617d6d6e1461014a5780638187b4c51461016c5780638886d8681461017f578063b02c43d014610192578063cb8451ef146101b5578063f058ebee146101c8576100b4565b8063089fe6aa146100b95780630a1d7c5f146100d75780630fc63d10146100ec578063150b7a021461010157806346ce96dd146101215780635f64b55b14610142575b600080fd5b6100c16101eb565b6040516100ce9190611504565b60405180910390f35b6100ea6100e53660046110dc565b6101fd565b005b6100f46102f3565b6040516100ce919061129a565b61011461010f36600461100e565b610302565b6040516100ce9190611306565b61013461012f3660046110dc565b610349565b6040516100ce929190611541565b6100f461040b565b61015d610158366004611173565b61041a565b6040516100ce939291906114e3565b61013461017a3660046110dc565b6105af565b6100ea61018d366004610fc4565b6106d4565b6101a56101a03660046110dc565b610721565b6040516100ce94939291906112d2565b6100ea6101c3366004610fa1565b610760565b6101db6101d636600461112f565b610782565b6040516100ce949392919061151d565b600254600160a01b900462ffffff1681565b6000818152600360205260409020546001600160a01b0316331461023c5760405162461bcd60e51b815260040161023390611344565b60405180910390fd5b600081815260036020819052604080832080546001600160a01b031990811682556001820180546fffffffffffffffffffffffffffffffff19169055600282018054821690559201805490921690915590549051632142170760e11b81526001600160a01b03909116906342842e0e906102be903090339086906004016112ae565b600060405180830381600087803b1580156102d857600080fd5b505af11580156102ec573d6000803e3d6000fd5b5050505050565b6001546001600160a01b031681565b600080546001600160a01b0316331461032d5760405162461bcd60e51b81526004016102339061131b565b6103378685610988565b50630a85bd0160e11b95945050505050565b604080516080810182528281523060208201526001600160801b03818301819052606082015260008054925163fc6f786560e01b815290928392916001600160a01b039091169063fc6f7865906103a490849060040161136b565b6040805180830381600087803b1580156103bd57600080fd5b505af11580156103d1573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906103f59190611150565b9093509150610405848484610b33565b50915091565b6002546001600160a01b031681565b600083815260036020819052604082206002810154910154829182916001600160a01b03918216911661044f8233308a610b7f565b61045b81333089610b7f565b6000546104739083906001600160a01b031689610ccf565b60005461048b9082906001600160a01b031688610ccf565b6040805160c08101825289815260208101899052808201889052600060608201819052608082018190524260a083015254915163219f5d1760e01b815290916001600160a01b03169063219f5d17906104e89084906004016113f1565b606060405180830381600087803b15801561050257600080fd5b505af1158015610516573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061053a91906110a8565b919750955093508785101561057257600080546105629185916001600160a01b031690610ccf565b848803610570843383610e16565b505b868410156105a357600080546105939184916001600160a01b031690610ccf565b8387036105a1833383610e16565b505b50505093509350939050565b60008181526003602052604081205481906001600160a01b031633146105e75760405162461bcd60e51b815260040161023390611344565b6000838152600360205260408120600101546001600160801b0316906002826040805160a081018252888152929091046001600160801b0381166020840152600083830181905260608401819052426080850152549151630624e65f60e11b81529093506001600160a01b0390911690630c49ccbe9061066b9084906004016113ae565b6040805180830381600087803b15801561068457600080fd5b505af1158015610698573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906106bc9190611150565b90955093506106cc868686610b33565b505050915091565b600180546001600160a01b03199081166001600160a01b039586161790915560028054909116929093169190911762ffffff60a01b1916600160a01b62ffffff9290921691909102179055565b600360208190526000918252604090912080546001820154600283015492909301546001600160a01b03918216936001600160801b0316928216911684565b600080546001600160a01b0319166001600160a01b0392909216919091179055565b6001546000908190819081906107a3906001600160a01b0316333089610b7f565b6002546107bb906001600160a01b0316333088610b7f565b6001546000546107d8916001600160a01b03908116911688610ccf565b6002546000546107f5916001600160a01b03908116911687610ccf565b60408051610160810182526001546001600160a01b0390811682526002548082166020840152600160a01b900462ffffff1682840152620d89e7196060830152620d89e8608083015260a0820189905260c08201889052600060e0830181905261010083018190523061012084015242610140840152549251634418b22b60e11b815291921690638831645690610890908490600401611435565b608060405180830381600087803b1580156108aa57600080fd5b505af11580156108be573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906108e291906110f4565b929750909550935091506108f63386610988565b8683101561093a576001546000805461091d926001600160a01b0390811692911690610ccf565b60015483880390610938906001600160a01b03163383610e16565b505b8582101561097e5760025460008054610961926001600160a01b0390811692911690610ccf565b6002548287039061097c906001600160a01b03163383610e16565b505b5092959194509250565b6000805460405163133f757160e31b8152829182916001600160a01b03909116906399fbab88906109bd908790600401611514565b6101806040518083038186803b1580156109d657600080fd5b505afa1580156109ea573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610a0e919061119e565b5050505097505050509450945050506040518060800160405280866001600160a01b03168152602001826001600160801b03168152602001846001600160a01b03168152602001836001600160a01b03168152506003600086815260200190815260200160002060008201518160000160006101000a8154816001600160a01b0302191690836001600160a01b0316021790555060208201518160010160006101000a8154816001600160801b0302191690836001600160801b0316021790555060408201518160020160006101000a8154816001600160a01b0302191690836001600160a01b0316021790555060608201518160030160006101000a8154816001600160a01b0302191690836001600160a01b031602179055509050505050505050565b60008381526003602081905260409091208054600282015491909201546001600160a01b03928316929182169116610b6c828487610e16565b610b77818486610e16565b505050505050565b604080516001600160a01b0385811660248301528481166044830152606480830185905283518084039091018152608490920183526020820180516001600160e01b03166323b872dd60e01b178152925182516000948594938a169392918291908083835b60208310610c035780518252601f199092019160209182019101610be4565b6001836020036101000a0380198251168184511680821785525050505050509050019150506000604051808303816000865af19150503d8060008114610c65576040519150601f19603f3d011682016040523d82523d6000602084013e610c6a565b606091505b5091509150818015610c98575080511580610c985750808060200190516020811015610c9557600080fd5b50515b610b77576040805162461bcd60e51b815260206004820152600360248201526229aa2360e91b604482015290519081900360640190fd5b604080516001600160a01b038481166024830152604480830185905283518084039091018152606490920183526020820180516001600160e01b031663095ea7b360e01b1781529251825160009485949389169392918291908083835b60208310610d4b5780518252601f199092019160209182019101610d2c565b6001836020036101000a0380198251168184511680821785525050505050509050019150506000604051808303816000865af19150503d8060008114610dad576040519150601f19603f3d011682016040523d82523d6000602084013e610db2565b606091505b5091509150818015610de0575080511580610de05750808060200190516020811015610ddd57600080fd5b50515b6102ec576040805162461bcd60e51b8152602060048201526002602482015261534160f01b604482015290519081900360640190fd5b604080516001600160a01b038481166024830152604480830185905283518084039091018152606490920183526020820180516001600160e01b031663a9059cbb60e01b1781529251825160009485949389169392918291908083835b60208310610e925780518252601f199092019160209182019101610e73565b6001836020036101000a0380198251168184511680821785525050505050509050019150506000604051808303816000865af19150503d8060008114610ef4576040519150601f19603f3d011682016040523d82523d6000602084013e610ef9565b606091505b5091509150818015610f27575080511580610f275750808060200190516020811015610f2457600080fd5b50515b6102ec576040805162461bcd60e51b815260206004820152600260248201526114d560f21b604482015290519081900360640190fd5b8051610f688161154f565b919050565b8051600281900b8114610f6857600080fd5b80516001600160801b0381168114610f6857600080fd5b8051610f6881611567565b600060208284031215610fb2578081fd5b8135610fbd8161154f565b9392505050565b600080600060608486031215610fd8578182fd5b8335610fe38161154f565b92506020840135610ff38161154f565b9150604084013561100381611567565b809150509250925092565b600080600080600060808688031215611025578081fd5b85356110308161154f565b945060208601356110408161154f565b935060408601359250606086013567ffffffffffffffff80821115611063578283fd5b818801915088601f830112611076578283fd5b813581811115611084578384fd5b896020828501011115611095578384fd5b9699959850939650602001949392505050565b6000806000606084860312156110bc578283fd5b6110c584610f7f565b925060208401519150604084015190509250925092565b6000602082840312156110ed578081fd5b5035919050565b60008060008060808587031215611109578384fd5b8451935061111960208601610f7f565b6040860151606090960151949790965092505050565b60008060408385031215611141578182fd5b50508035926020909101359150565b60008060408385031215611162578182fd5b505080516020909101519092909150565b600080600060608486031215611187578283fd5b505081359360208301359350604090920135919050565b6000806000806000806000806000806000806101808d8f0312156111c0578687fd5b8c516bffffffffffffffffffffffff811681146111db578788fd5b9b506111e960208e01610f5d565b9a506111f760408e01610f5d565b995061120560608e01610f5d565b985061121360808e01610f96565b975061122160a08e01610f6d565b965061122f60c08e01610f6d565b955061123d60e08e01610f7f565b94506101008d015193506101208d0151925061125c6101408e01610f7f565b915061126b6101608e01610f7f565b90509295989b509295989b509295989b565b6001600160a01b03169052565b60020b9052565b62ffffff169052565b6001600160a01b0391909116815260200190565b6001600160a01b039384168152919092166020820152604081019190915260600190565b6001600160a01b0394851681526001600160801b039390931660208401529083166040830152909116606082015260800190565b6001600160e01b031991909116815260200190565b6020808252600f908201526e1b9bdd0818481d5b9a5d8cc81b999d608a1b604082015260600190565b6020808252600d908201526c2737ba103a34329037bbb732b960991b604082015260600190565b815181526020808301516001600160a01b0316908201526040808301516001600160801b0390811691830191909152606092830151169181019190915260800190565b600060a082019050825182526001600160801b03602084015116602083015260408301516040830152606083015160608301526080830151608083015292915050565b600060c082019050825182526020830151602083015260408301516040830152606083015160608301526080830151608083015260a083015160a083015292915050565b60006101608201905061144982845161127d565b602083015161145b602084018261127d565b50604083015161146e6040840182611291565b506060830151611481606084018261128a565b506080830151611494608084018261128a565b5060a083015160a083015260c083015160c083015260e083015160e0830152610100808401518184015250610120808401516114d28285018261127d565b505061014092830151919092015290565b6001600160801b039390931683526020830191909152604082015260600190565b62ffffff91909116815260200190565b90815260200190565b9384526001600160801b039290921660208401526040830152606082015260800190565b918252602082015260400190565b6001600160a01b038116811461156457600080fd5b50565b62ffffff8116811461156457600080fdfea2646970667358221220cff37bde7233fd6b5f029e7b395254155edece1aec067af2b95f6432e67244f464736f6c63430007060033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100b45760003560e01c8063617d6d6e11610071578063617d6d6e1461014a5780638187b4c51461016c5780638886d8681461017f578063b02c43d014610192578063cb8451ef146101b5578063f058ebee146101c8576100b4565b8063089fe6aa146100b95780630a1d7c5f146100d75780630fc63d10146100ec578063150b7a021461010157806346ce96dd146101215780635f64b55b14610142575b600080fd5b6100c16101eb565b6040516100ce9190611504565b60405180910390f35b6100ea6100e53660046110dc565b6101fd565b005b6100f46102f3565b6040516100ce919061129a565b61011461010f36600461100e565b610302565b6040516100ce9190611306565b61013461012f3660046110dc565b610349565b6040516100ce929190611541565b6100f461040b565b61015d610158366004611173565b61041a565b6040516100ce939291906114e3565b61013461017a3660046110dc565b6105af565b6100ea61018d366004610fc4565b6106d4565b6101a56101a03660046110dc565b610721565b6040516100ce94939291906112d2565b6100ea6101c3366004610fa1565b610760565b6101db6101d636600461112f565b610782565b6040516100ce949392919061151d565b600254600160a01b900462ffffff1681565b6000818152600360205260409020546001600160a01b0316331461023c5760405162461bcd60e51b815260040161023390611344565b60405180910390fd5b600081815260036020819052604080832080546001600160a01b031990811682556001820180546fffffffffffffffffffffffffffffffff19169055600282018054821690559201805490921690915590549051632142170760e11b81526001600160a01b03909116906342842e0e906102be903090339086906004016112ae565b600060405180830381600087803b1580156102d857600080fd5b505af11580156102ec573d6000803e3d6000fd5b5050505050565b6001546001600160a01b031681565b600080546001600160a01b0316331461032d5760405162461bcd60e51b81526004016102339061131b565b6103378685610988565b50630a85bd0160e11b95945050505050565b604080516080810182528281523060208201526001600160801b03818301819052606082015260008054925163fc6f786560e01b815290928392916001600160a01b039091169063fc6f7865906103a490849060040161136b565b6040805180830381600087803b1580156103bd57600080fd5b505af11580156103d1573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906103f59190611150565b9093509150610405848484610b33565b50915091565b6002546001600160a01b031681565b600083815260036020819052604082206002810154910154829182916001600160a01b03918216911661044f8233308a610b7f565b61045b81333089610b7f565b6000546104739083906001600160a01b031689610ccf565b60005461048b9082906001600160a01b031688610ccf565b6040805160c08101825289815260208101899052808201889052600060608201819052608082018190524260a083015254915163219f5d1760e01b815290916001600160a01b03169063219f5d17906104e89084906004016113f1565b606060405180830381600087803b15801561050257600080fd5b505af1158015610516573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061053a91906110a8565b919750955093508785101561057257600080546105629185916001600160a01b031690610ccf565b848803610570843383610e16565b505b868410156105a357600080546105939184916001600160a01b031690610ccf565b8387036105a1833383610e16565b505b50505093509350939050565b60008181526003602052604081205481906001600160a01b031633146105e75760405162461bcd60e51b815260040161023390611344565b6000838152600360205260408120600101546001600160801b0316906002826040805160a081018252888152929091046001600160801b0381166020840152600083830181905260608401819052426080850152549151630624e65f60e11b81529093506001600160a01b0390911690630c49ccbe9061066b9084906004016113ae565b6040805180830381600087803b15801561068457600080fd5b505af1158015610698573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906106bc9190611150565b90955093506106cc868686610b33565b505050915091565b600180546001600160a01b03199081166001600160a01b039586161790915560028054909116929093169190911762ffffff60a01b1916600160a01b62ffffff9290921691909102179055565b600360208190526000918252604090912080546001820154600283015492909301546001600160a01b03918216936001600160801b0316928216911684565b600080546001600160a01b0319166001600160a01b0392909216919091179055565b6001546000908190819081906107a3906001600160a01b0316333089610b7f565b6002546107bb906001600160a01b0316333088610b7f565b6001546000546107d8916001600160a01b03908116911688610ccf565b6002546000546107f5916001600160a01b03908116911687610ccf565b60408051610160810182526001546001600160a01b0390811682526002548082166020840152600160a01b900462ffffff1682840152620d89e7196060830152620d89e8608083015260a0820189905260c08201889052600060e0830181905261010083018190523061012084015242610140840152549251634418b22b60e11b815291921690638831645690610890908490600401611435565b608060405180830381600087803b1580156108aa57600080fd5b505af11580156108be573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906108e291906110f4565b929750909550935091506108f63386610988565b8683101561093a576001546000805461091d926001600160a01b0390811692911690610ccf565b60015483880390610938906001600160a01b03163383610e16565b505b8582101561097e5760025460008054610961926001600160a01b0390811692911690610ccf565b6002548287039061097c906001600160a01b03163383610e16565b505b5092959194509250565b6000805460405163133f757160e31b8152829182916001600160a01b03909116906399fbab88906109bd908790600401611514565b6101806040518083038186803b1580156109d657600080fd5b505afa1580156109ea573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610a0e919061119e565b5050505097505050509450945050506040518060800160405280866001600160a01b03168152602001826001600160801b03168152602001846001600160a01b03168152602001836001600160a01b03168152506003600086815260200190815260200160002060008201518160000160006101000a8154816001600160a01b0302191690836001600160a01b0316021790555060208201518160010160006101000a8154816001600160801b0302191690836001600160801b0316021790555060408201518160020160006101000a8154816001600160a01b0302191690836001600160a01b0316021790555060608201518160030160006101000a8154816001600160a01b0302191690836001600160a01b031602179055509050505050505050565b60008381526003602081905260409091208054600282015491909201546001600160a01b03928316929182169116610b6c828487610e16565b610b77818486610e16565b505050505050565b604080516001600160a01b0385811660248301528481166044830152606480830185905283518084039091018152608490920183526020820180516001600160e01b03166323b872dd60e01b178152925182516000948594938a169392918291908083835b60208310610c035780518252601f199092019160209182019101610be4565b6001836020036101000a0380198251168184511680821785525050505050509050019150506000604051808303816000865af19150503d8060008114610c65576040519150601f19603f3d011682016040523d82523d6000602084013e610c6a565b606091505b5091509150818015610c98575080511580610c985750808060200190516020811015610c9557600080fd5b50515b610b77576040805162461bcd60e51b815260206004820152600360248201526229aa2360e91b604482015290519081900360640190fd5b604080516001600160a01b038481166024830152604480830185905283518084039091018152606490920183526020820180516001600160e01b031663095ea7b360e01b1781529251825160009485949389169392918291908083835b60208310610d4b5780518252601f199092019160209182019101610d2c565b6001836020036101000a0380198251168184511680821785525050505050509050019150506000604051808303816000865af19150503d8060008114610dad576040519150601f19603f3d011682016040523d82523d6000602084013e610db2565b606091505b5091509150818015610de0575080511580610de05750808060200190516020811015610ddd57600080fd5b50515b6102ec576040805162461bcd60e51b8152602060048201526002602482015261534160f01b604482015290519081900360640190fd5b604080516001600160a01b038481166024830152604480830185905283518084039091018152606490920183526020820180516001600160e01b031663a9059cbb60e01b1781529251825160009485949389169392918291908083835b60208310610e925780518252601f199092019160209182019101610e73565b6001836020036101000a0380198251168184511680821785525050505050509050019150506000604051808303816000865af19150503d8060008114610ef4576040519150601f19603f3d011682016040523d82523d6000602084013e610ef9565b606091505b5091509150818015610f27575080511580610f275750808060200190516020811015610f2457600080fd5b50515b6102ec576040805162461bcd60e51b815260206004820152600260248201526114d560f21b604482015290519081900360640190fd5b8051610f688161154f565b919050565b8051600281900b8114610f6857600080fd5b80516001600160801b0381168114610f6857600080fd5b8051610f6881611567565b600060208284031215610fb2578081fd5b8135610fbd8161154f565b9392505050565b600080600060608486031215610fd8578182fd5b8335610fe38161154f565b92506020840135610ff38161154f565b9150604084013561100381611567565b809150509250925092565b600080600080600060808688031215611025578081fd5b85356110308161154f565b945060208601356110408161154f565b935060408601359250606086013567ffffffffffffffff80821115611063578283fd5b818801915088601f830112611076578283fd5b813581811115611084578384fd5b896020828501011115611095578384fd5b9699959850939650602001949392505050565b6000806000606084860312156110bc578283fd5b6110c584610f7f565b925060208401519150604084015190509250925092565b6000602082840312156110ed578081fd5b5035919050565b60008060008060808587031215611109578384fd5b8451935061111960208601610f7f565b6040860151606090960151949790965092505050565b60008060408385031215611141578182fd5b50508035926020909101359150565b60008060408385031215611162578182fd5b505080516020909101519092909150565b600080600060608486031215611187578283fd5b505081359360208301359350604090920135919050565b6000806000806000806000806000806000806101808d8f0312156111c0578687fd5b8c516bffffffffffffffffffffffff811681146111db578788fd5b9b506111e960208e01610f5d565b9a506111f760408e01610f5d565b995061120560608e01610f5d565b985061121360808e01610f96565b975061122160a08e01610f6d565b965061122f60c08e01610f6d565b955061123d60e08e01610f7f565b94506101008d015193506101208d0151925061125c6101408e01610f7f565b915061126b6101608e01610f7f565b90509295989b509295989b509295989b565b6001600160a01b03169052565b60020b9052565b62ffffff169052565b6001600160a01b0391909116815260200190565b6001600160a01b039384168152919092166020820152604081019190915260600190565b6001600160a01b0394851681526001600160801b039390931660208401529083166040830152909116606082015260800190565b6001600160e01b031991909116815260200190565b6020808252600f908201526e1b9bdd0818481d5b9a5d8cc81b999d608a1b604082015260600190565b6020808252600d908201526c2737ba103a34329037bbb732b960991b604082015260600190565b815181526020808301516001600160a01b0316908201526040808301516001600160801b0390811691830191909152606092830151169181019190915260800190565b600060a082019050825182526001600160801b03602084015116602083015260408301516040830152606083015160608301526080830151608083015292915050565b600060c082019050825182526020830151602083015260408301516040830152606083015160608301526080830151608083015260a083015160a083015292915050565b60006101608201905061144982845161127d565b602083015161145b602084018261127d565b50604083015161146e6040840182611291565b506060830151611481606084018261128a565b506080830151611494608084018261128a565b5060a083015160a083015260c083015160c083015260e083015160e0830152610100808401518184015250610120808401516114d28285018261127d565b505061014092830151919092015290565b6001600160801b039390931683526020830191909152604082015260600190565b62ffffff91909116815260200190565b90815260200190565b9384526001600160801b039290921660208401526040830152606082015260800190565b918252602082015260400190565b6001600160a01b038116811461156457600080fd5b50565b62ffffff8116811461156457600080fdfea2646970667358221220cff37bde7233fd6b5f029e7b395254155edece1aec067af2b95f6432e67244f464736f6c63430007060033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "collectAllFees(uint256)": {
+        "details": "The contract must hold the erc721 token before it can collect fees",
+        "params": {
+          "tokenId": "The id of the erc721 token"
+        },
+        "returns": {
+          "amount0": "The amount of fees collected in token0",
+          "amount1": "The amount of fees collected in token1"
+        }
+      },
+      "decreaseLiquidityInHalf(uint256)": {
+        "params": {
+          "tokenId": "The id of the erc721 token"
+        },
+        "returns": {
+          "amount0": "The amount received back in token0",
+          "amount1": "The amount returned back in token1"
+        }
+      },
+      "increaseLiquidityCurrentRange(uint256,uint256,uint256)": {
+        "details": "Pool must be initialized already to add liquidity",
+        "params": {
+          "amount0": "The amount to add of token0",
+          "amount1": "The amount to add of token1",
+          "tokenId": "The id of the erc721 token"
+        }
+      },
+      "mintNewPosition(uint256,uint256)": {
+        "returns": {
+          "amount0": "The amount of token0",
+          "amount1": "The amount of token1",
+          "liquidity": "The amount of liquidity for the position",
+          "tokenId": "The id of the newly minted ERC721"
+        }
+      },
+      "retrieveNFT(uint256)": {
+        "params": {
+          "tokenId": "The id of the erc721"
+        }
+      }
+    },
+    "stateVariables": {
+      "deposits": {
+        "details": "deposits[tokenId] => Deposit"
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "collectAllFees(uint256)": {
+        "notice": "Collects the fees associated with provided liquidity"
+      },
+      "decreaseLiquidityInHalf(uint256)": {
+        "notice": "A function that decreases the current liquidity by half. An example to show how to call the `decreaseLiquidity` function defined in periphery."
+      },
+      "increaseLiquidityCurrentRange(uint256,uint256,uint256)": {
+        "notice": "Increases liquidity in the current range"
+      },
+      "mintNewPosition(uint256,uint256)": {
+        "notice": "Calls the mint function defined in periphery, mints the same amount of each token. For this example we are providing 1000 tokenA and 1000 tokenB in liquidity"
+      },
+      "retrieveNFT(uint256)": {
+        "notice": "Transfers the NFT to the owner"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 1708,
+        "contract": "contracts/LiquidityExamples.sol:LiquidityExamples",
+        "label": "nonfungiblePositionManager",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_contract(INonfungiblePositionManager)2677"
+      },
+      {
+        "astId": 1710,
+        "contract": "contracts/LiquidityExamples.sol:LiquidityExamples",
+        "label": "tokenA",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_address"
+      },
+      {
+        "astId": 1712,
+        "contract": "contracts/LiquidityExamples.sol:LiquidityExamples",
+        "label": "tokenB",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_address"
+      },
+      {
+        "astId": 1714,
+        "contract": "contracts/LiquidityExamples.sol:LiquidityExamples",
+        "label": "poolFee",
+        "offset": 20,
+        "slot": "2",
+        "type": "t_uint24"
+      },
+      {
+        "astId": 1728,
+        "contract": "contracts/LiquidityExamples.sol:LiquidityExamples",
+        "label": "deposits",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_mapping(t_uint256,t_struct(Deposit)1723_storage)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_contract(INonfungiblePositionManager)2677": {
+        "encoding": "inplace",
+        "label": "contract INonfungiblePositionManager",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_uint256,t_struct(Deposit)1723_storage)": {
+        "encoding": "mapping",
+        "key": "t_uint256",
+        "label": "mapping(uint256 => struct LiquidityExamples.Deposit)",
+        "numberOfBytes": "32",
+        "value": "t_struct(Deposit)1723_storage"
+      },
+      "t_struct(Deposit)1723_storage": {
+        "encoding": "inplace",
+        "label": "struct LiquidityExamples.Deposit",
+        "members": [
+          {
+            "astId": 1716,
+            "contract": "contracts/LiquidityExamples.sol:LiquidityExamples",
+            "label": "owner",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_address"
+          },
+          {
+            "astId": 1718,
+            "contract": "contracts/LiquidityExamples.sol:LiquidityExamples",
+            "label": "liquidity",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint128"
+          },
+          {
+            "astId": 1720,
+            "contract": "contracts/LiquidityExamples.sol:LiquidityExamples",
+            "label": "token0",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_address"
+          },
+          {
+            "astId": 1722,
+            "contract": "contracts/LiquidityExamples.sol:LiquidityExamples",
+            "label": "token1",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_address"
+          }
+        ],
+        "numberOfBytes": "128"
+      },
+      "t_uint128": {
+        "encoding": "inplace",
+        "label": "uint128",
+        "numberOfBytes": "16"
+      },
+      "t_uint24": {
+        "encoding": "inplace",
+        "label": "uint24",
+        "numberOfBytes": "3"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}
