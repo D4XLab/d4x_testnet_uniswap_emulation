@@ -1,5 +1,4 @@
 export interface networkConfigItem {
-    ethUsdPriceFeed?: string
     blockConfirmations?: number
     url?: string
     chainId?: number
@@ -19,9 +18,8 @@ export const networkConfig: networkConfigInfo = {
     localhost: {},
     hardhat: {},
     optimisticGoerli: {
-        ethUsdPriceFeed: "",
         blockConfirmations: 6,
-        url: "RPC_URL",
+        url: process.env.OPT_GOERLI_RPC_URL,
         chainId: 420,
         dai_address: "0x312C1C8F5BC23f08331B1486Da723dd1B80F9040",
         usdc_address: "0xEA2aa731c7493BeC9DfB3663E6A9888269d269bF",
@@ -33,9 +31,8 @@ export const networkConfig: networkConfigInfo = {
         etherscan_api_key: process.env.OPT_ETHERSCAN_API_KEY,
     },
     polygonMumbai: {
-        ethUsdPriceFeed: "",
         blockConfirmations: 6,
-        url: "RPC_URL",
+        url: process.env.MUMBAI_RPC_URL,
         chainId: 80001,
         dai_address: "0xF6fEd63aAF618d25050e5E3d3B4c525ab2154554",
         usdc_address: "0x2D7eB0e8802d3a530E298a1f94ce176ad6B3Ab43",
