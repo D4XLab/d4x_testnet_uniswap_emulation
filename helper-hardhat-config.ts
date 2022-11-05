@@ -24,7 +24,7 @@ export const networkConfig: networkConfigInfo = {
         chainId: 420,
         dai_address: "0x312C1C8F5BC23f08331B1486Da723dd1B80F9040",
         usdc_address: "0xEA2aa731c7493BeC9DfB3663E6A9888269d269bF",
-        usdt_address: "0x7bF76F5Eac3f6993cd880f7c12c1f299A129387d",
+        usdt_address: "0x3F5a8c43E3700c628F951cedc4f9054882E86BE6",
         nonfungible_position_manager_address:
             "0x3E3bedb16cEf30C7B07F410F329B9425bACfAdEc",
         uniswap_v3_factory_address:
