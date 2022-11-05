@@ -32,12 +32,15 @@ const SWAP_ROUTER_ADDRESS = networkConfig[network.name]["swap_router_address"]!
 
 const DAI_ADDRESS = networkConfig[network.name]["dai_address"]!
 const USDC_ADDRESS = networkConfig[network.name]["usdc_address"]!
+const USDT_ADDRESS = networkConfig[network.name]["usdt_address"]!
 const FEE = 100
 const DAI_BN_DEPOSIT = 100000 * 10 ** 18
 const USDC_BN_DEPOSIT = 101000 * 10 ** 18
+const USDT_BN_DEPOSIT = 101000 * 10 ** 18
 const LIQUIDITY_BN = 110000000 * 10 ** 18
 const DAI_deposit = JSBI.BigInt(DAI_BN_DEPOSIT)
 const USDC_deposit = JSBI.BigInt(USDC_BN_DEPOSIT)
+const USDT_deposit = JSBI.BigInt(USDT_BN_DEPOSIT)
 const LIQUIDITY = JSBI.BigInt(LIQUIDITY_BN)
 
 interface Immutables {
@@ -182,12 +185,22 @@ async function getPoolByTokensAndFee(
 function getSqrtRatio(tokenADeposit: JSBI, tokenBDeposit: JSBI): JSBI {
     const sqrtRatioX96: any = encodeSqrtRatioX96(tokenBDeposit, tokenADeposit)
     const price = sqrtRatioX96 ** 2 / 2 ** 192
-    console.log(`Price: ${price} USDC for 1 DAI`)
+    console.log(`Price: ${price}`)
 
     return sqrtRatioX96
 }
 
-async function createPosition(poolAddress: Address): Promise<void> {
+async function createPosition(
+    poolAddress: Address,
+    token0Symbol: string,
+    token0Name: string,
+    token1Symbol: string,
+    token1Name: string,
+    token0Address: string,
+    token1Address: string,
+    token0Deposit: JSBI,
+    token1Deposit: JSBI
+): Promise<void> {
     // get Pool
     const poolContract = new ethers.Contract(
         poolAddress,
@@ -203,14 +216,20 @@ async function createPosition(poolAddress: Address): Promise<void> {
         getPoolState(poolContract),
     ])
 
-    const TokenA = new Token(chainId, immutables.token0, 18, "TDAI", "TestDAI")
+    const TokenA = new Token(
+        chainId,
+        immutables.token0,
+        18,
+        token0Symbol,
+        token0Name
+    )
 
     const TokenB = new Token(
         chainId,
         immutables.token1,
         18,
-        "TUSDC",
-        "TestUSDC"
+        token1Symbol,
+        token1Name
     )
 
     console.log(`Current liquidity: ${state.liquidity.toString()}`)
@@ -243,16 +262,16 @@ async function createPosition(poolAddress: Address): Promise<void> {
     )
 
     await approveErc20(
-        DAI_ADDRESS,
+        token0Address,
         nonFungiblePositionManagerContract.address,
-        DAI_deposit.toString(),
+        token0Deposit.toString(),
         owner.address
     )
 
     await approveErc20(
-        USDC_ADDRESS,
+        token1Address,
         nonFungiblePositionManagerContract.address,
-        USDC_deposit.toString(),
+        token1Deposit.toString(),
         owner.address
     )
 
@@ -263,8 +282,8 @@ async function createPosition(poolAddress: Address): Promise<void> {
     console.log(`amount1Desired: ${amount1Desired}`)
 
     const params = {
-        token0: DAI_ADDRESS,
-        token1: USDC_ADDRESS,
+        token0: token0Address,
+        token1: token1Address,
         fee: immutables.fee,
         tickLower:
             nearestUsableTick(state.tick, immutables.tickSpacing) -
@@ -366,47 +385,57 @@ async function main() {
     const owner = accounts[0]!
     let poolAddress: Address = await createPool(
         DAI_ADDRESS,
-        USDC_ADDRESS,
+        USDT_ADDRESS,
         DAI_deposit,
-        USDC_deposit
+        USDT_deposit
     )
-    poolAddress = await getPoolByTokensAndFee(DAI_ADDRESS, USDC_ADDRESS, FEE)
+    poolAddress = await getPoolByTokensAndFee(DAI_ADDRESS, USDT_ADDRESS, FEE)
     console.log(
-        `Pool for tokens ${DAI_ADDRESS} and ${USDC_ADDRESS} at ${poolAddress}`
+        `Pool for tokens ${DAI_ADDRESS} and ${USDT_ADDRESS} at ${poolAddress}`
     )
 
-    await createPosition(poolAddress)
+    await createPosition(
+        poolAddress,
+        "TDAI",
+        "TestDAI",
+        "TUSDT",
+        "TestUSDT",
+        DAI_ADDRESS,
+        USDT_ADDRESS,
+        DAI_deposit,
+        USDT_deposit
+    )
 
     const poolBalanceDAI = await checkBalanceOf(poolAddress, DAI_ADDRESS)
-    const poolBalanceUSDC = await checkBalanceOf(poolAddress, USDC_ADDRESS)
+    const poolBalanceUSDT = await checkBalanceOf(poolAddress, USDT_ADDRESS)
     console.log(`DAI in pool after creating position: ${poolBalanceDAI}`)
-    console.log(`USDC in pool after creating position: ${poolBalanceUSDC}`)
+    console.log(`USDT in pool after creating position: ${poolBalanceUSDT}`)
     const ownerBalanceDAI = await checkBalanceOf(owner.address, DAI_ADDRESS)
-    const ownerBalanceUSDC = await checkBalanceOf(owner.address, USDC_ADDRESS)
+    const ownerBalanceUSDT = await checkBalanceOf(owner.address, USDT_ADDRESS)
     console.log(
         `DAI on owners balance after creating position: ${ownerBalanceDAI}`
     )
     console.log(
-        `USDC on owners balance after creating position: ${ownerBalanceUSDC}`
+        `USDT on owners balance after creating position: ${ownerBalanceUSDT}`
     )
 
     // Testing swap
     const swapAmount = JSBI.BigInt(10 * 10 ** 18)
-    await swapInput(DAI_ADDRESS, USDC_ADDRESS, swapAmount, poolAddress)
+    await swapInput(DAI_ADDRESS, USDT_ADDRESS, swapAmount, poolAddress)
     const poolBalanceDAIAfter = await checkBalanceOf(poolAddress, DAI_ADDRESS)
-    const poolBalanceUSDCAfter = await checkBalanceOf(poolAddress, USDC_ADDRESS)
+    const poolBalanceUSDTAfter = await checkBalanceOf(poolAddress, USDT_ADDRESS)
     console.log(`DAI in pool after swap: ${poolBalanceDAIAfter}`)
-    console.log(`USDC in pool after swap: ${poolBalanceUSDCAfter}`)
+    console.log(`USDT in pool after swap: ${poolBalanceUSDTAfter}`)
     const ownerBalanceDAIAfter = await checkBalanceOf(
         owner.address,
         DAI_ADDRESS
     )
-    const ownerBalanceUSDCAfter = await checkBalanceOf(
+    const ownerBalanceUSDTAfter = await checkBalanceOf(
         owner.address,
-        USDC_ADDRESS
+        USDT_ADDRESS
     )
     console.log(`DAI on owners balance after swap: ${ownerBalanceDAIAfter}`)
-    console.log(`USDC on owners balance after swap: ${ownerBalanceUSDCAfter}`)
+    console.log(`USDT on owners balance after swap: ${ownerBalanceUSDTAfter}`)
 }
 
 main()

@@ -4,6 +4,7 @@ export interface networkConfigItem {
     chainId?: number
     dai_address?: string
     usdc_address?: string
+    usdt_address?: string
     nonfungible_position_manager_address?: string
     uniswap_v3_factory_address?: string
     swap_router_address?: string
@@ -23,6 +24,7 @@ export const networkConfig: networkConfigInfo = {
         chainId: 420,
         dai_address: "0x312C1C8F5BC23f08331B1486Da723dd1B80F9040",
         usdc_address: "0xEA2aa731c7493BeC9DfB3663E6A9888269d269bF",
+        usdt_address: "0x7bF76F5Eac3f6993cd880f7c12c1f299A129387d",
         nonfungible_position_manager_address:
             "0x3E3bedb16cEf30C7B07F410F329B9425bACfAdEc",
         uniswap_v3_factory_address:
@@ -36,6 +38,7 @@ export const networkConfig: networkConfigInfo = {
         chainId: 80001,
         dai_address: "0xF6fEd63aAF618d25050e5E3d3B4c525ab2154554",
         usdc_address: "0x2D7eB0e8802d3a530E298a1f94ce176ad6B3Ab43",
+        usdt_address: "0x60965aB564AD3D6069577027DB5d1a43e5AD06a6",
         nonfungible_position_manager_address:
             "0xC36442b4a4522E871399CD717aBDD847Ab11FE88",
         uniswap_v3_factory_address:
